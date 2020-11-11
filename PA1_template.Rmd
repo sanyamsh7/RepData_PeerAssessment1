@@ -1,6 +1,6 @@
 # Reproducible Research: Peer Assessment 1
 
-```{r}
+```{r warning=FALSE}
 library(ggplot2)
 library(Hmisc)
 ```
