@@ -5,6 +5,7 @@ output:
     keep_md: true
 ---
 
+
 ```r
 library(ggplot2)
 ```
@@ -72,8 +73,10 @@ stepsMean <- mean(stepsTaken)
 stepsMedian <- median(stepsTaken)
 ```
 
+
 * MEAN : 9354.2295082
 * MEDIAN : 10395
+
 
 ## What is the average daily activity pattern?
 
@@ -88,12 +91,14 @@ ggplot(data=avStepsDaily, aes(x=interval, y=meanSteps)) +
 
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
+
 ## Imputing missing values
 ##### 1. Calculate and report the total number of missing values in the dataset 
 
 ```r
 totMissingValues <- length(which(is.na(activity$steps)))
 ```
+
 
 * Number of missing values: 2304
 

@@ -4,6 +4,7 @@ output:
   html_document:
     keep_md: true
 ---
+
 ```{r}
 library(ggplot2)
 library(Hmisc)
@@ -26,8 +27,10 @@ stepsMean <- mean(stepsTaken)
 stepsMedian <- median(stepsTaken)
 ```
 
+
 * MEAN : `r stepsMean`
 * MEDIAN : `r stepsMedian`
+
 
 ## What is the average daily activity pattern?
 ```{r echo=TRUE}
@@ -39,11 +42,13 @@ ggplot(data=avStepsDaily, aes(x=interval, y=meanSteps)) +
     ylab("Av. number of steps taken")
 ```
 
+
 ## Imputing missing values
 ##### 1. Calculate and report the total number of missing values in the dataset 
 ```{r echo=TRUE}
 totMissingValues <- length(which(is.na(activity$steps)))
 ```
+
 
 * Number of missing values: `r totMissingValues`
 
